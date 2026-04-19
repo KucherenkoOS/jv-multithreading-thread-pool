@@ -6,7 +6,8 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 
 public class MyThread implements Callable<String> {
-    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss.SSSSSS");
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter
+            .ofPattern("HH:mm:ss.SSSSSS");
 
     @Override
     public String call() throws InterruptedException {
